@@ -16,9 +16,9 @@ class PostController {
             content: content,
             creator: creator,
         });
-
-        await post.save();
+        Post.create(post);
     }
 }
+// https://github.com/tomanagle/Mongoose-TypeScript-example/blob/master/src/controllers/user.controller.ts
 
 export default new PostController();
