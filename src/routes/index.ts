@@ -1,4 +1,4 @@
-import { PostRouter } from "./post";
+import { PostRouter } from "./post.route";
 
 const router = [PostRouter];
 
