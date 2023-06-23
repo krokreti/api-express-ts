@@ -17,6 +17,7 @@ class PostController {
             creator: creator,
         });
         Post.create(post);
+        return response.status(200).send(post);
     }
 }
 // https://github.com/tomanagle/Mongoose-TypeScript-example/blob/master/src/controllers/user.controller.ts

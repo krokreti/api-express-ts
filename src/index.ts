@@ -14,8 +14,7 @@ app.use(cors());
 app.use(router);
 
 mongoose.set('strictQuery', false);
-mongoose.connect(uri).then(result => {
-    console.log(result);
+mongoose.connect(uri).then(_ => {
     app.listen(port, () => {
         console.log('Aplicação rodando na porta ' + port);
     })
