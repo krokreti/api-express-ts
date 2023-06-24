@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 import router from './routes';
 
 const port = 3002;
-const uri = 'mongodb+srv://krokreti:caramujo123@cluster0.ijzar44.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://<login>:<password>@cluster0.ijzar44.mongodb.net/?retryWrites=true&w=majority';
 const app = express();
 
 app.use(json());
